@@ -1,1 +1,1 @@
-# personalize
+여기서는 Amazon Personalize 의 기술적인 내용을 정리합니다.
