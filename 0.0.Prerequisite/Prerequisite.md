@@ -80,12 +80,9 @@
 ![OpenTerminal](img/Fig.4.3-OpenTermianl.png)
 
 ## 4-1 Git Repository 주소
-
-- Hands On Lab: Amazon Forecast
-    - https://github.com/gonsoomoon-ml/Forecast
     
 - Hands On Lab: Amazon Personalization
-    - https://github.com/daekeun-ml/recommendation-workshop
+    - https://github.com/gonsoomoon-ml/personalize 
     
 ## 4-2 Git Repository 다운로드 (Personalize 핸즈온)
 
