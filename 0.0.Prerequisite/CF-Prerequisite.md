@@ -1,7 +1,7 @@
 # 핸즈온 준비 단계 입니다.- Cloud Formation(CF) 을 통한 방법
 
 # 1. 이벤트 엔진 접속 (Event Engine Access)
-- 이벤트 엔진으로 접속이 아닐시에는 "2. CloudFormation Template을 사용하여 세이지 메이커 노트북 생성 및 권한 할당" 에서 시작 해주세요. (Skip this section if you don't use the event engine)
+- **이벤트 엔진으로 접속이 아닐시에는 "2. CloudFormation Template을 사용하여 세이지 메이커 노트북 생성 및 권한 할당" 에서 시작 해주세요.** (Skip this section if you don't use the event engine)
 - 이벤트 엔진(https://dashboard.eventengine.run)에 접속을 하시고, 받으신 해시 코드를 입력해주세요. (Connect to the event engine and enter the hashcode given)
 
 ![EventEngine](img/Fig0.1-EventEngine.png)
@@ -66,7 +66,7 @@ Once it has completed you'll see green text like below indicating that the work 
 ![StackWizard5](static/imgs/img8-1.png)
 
 
-## 세이지 메이커 노트북 열기
+# 3.세이지 메이커 노트북 열기
 Using the Notebooks
 
 **콘솔의 왼쪽 상단의 네비게이션 바에서 'Services'를 클릭 하신 후에 'SageMaker'를 찾으세요.**<br>
@@ -89,22 +89,16 @@ To get to the Jupyter interface, simply click `Open JupyterLab` on the far right
 
 ![OpenTerminal](img/Fig.4.3-OpenTermianl.png)
 
-# Personalize 핸즈온 수행시만 진행
-## Personalize Git Repository 주소
     
-- Hands On Lab: Amazon Personalization
-    - https://github.com/daekeun-ml/recommendation-workshop
+# 4. Git Repository 다운로드 (Personalize 핸즈온)
 
-
-### 퍼스널라이즈 Git Repository 다운로드 
-
-- **아래 화면 처럼 입력 해주시고, 오른쪽에 폴더가 생성되었는지 확인 해주세요. (아래 그림의 (1), (2), (3)을 하세요)**
+- 아래 화면 처럼 입력 해주시고, 오른쪽에 폴더가 생성되었는지 확인 해주세요.
     - 간단하게 아래를 순서대로 카피 하시고 (Control-v 혹은 Cmd-v) 하시고 붙여넣기 (Control-v) 하시면 됩니다.
-    - cd
     - cd SageMaker
-    - git clone https://github.com/daekeun-ml/recommendation-workshop
+    - git clone https://github.com/gonsoomoon-ml/personalize   
+    
 
-![TypeGitAndConfirm](static/imgs/download-personalize.png)
+![TypeGitAndConfirm_](img/Fig.4.4.TypeGitandConfirm.png)
 
 # 준비 완료 (Get Ready)
 
