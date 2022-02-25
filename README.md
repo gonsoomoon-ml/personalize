@@ -1,4 +1,4 @@
-# 핸즈온 사전 단계
+# 0. 핸즈온 사전 단계
 
 - 이벤트 엔진, Cloud Formation 이용: 
     - [핸즈온 준비 필수 단게: Prerequisite](0.0.Prerequisite/CF-Prerequisite.md)
@@ -7,8 +7,10 @@
     - [여기](0.0.Prerequisite/Prerequisite.md) 를 클릭해서 해주세요.
 - SageMaker notebook instance 를 이미 가지고 있는 경우
     - SageMaker notebook instance를 실행하는 Role이 아래 4개의 권한을 꼭 가지고 있어야 합니다. 아래 권한을 추가 해주세요. 참고로 위의 수동 설정에는 아래 4가지 권한을 추가하는 과정이 있습니다. 참고 하세요. (AmazonSageMakerFullAccess, AmazonS3FullAccess, AmazonPersonalizeFullAccess, IAMFullAccess)
+    
+---
 
-## Personalize 워크샵의 목적
+# 1. Personalize 워크샵의 목적
 **아래와 같은 호기심을 충족을 목적으로 합니다.**
 
 - 유저의 상호작용 (영화 보기)에 따른 실시간 추천의 변화
@@ -31,12 +33,12 @@
 - ColdStart Campaign 의 추천 결과 유추
     - **추천 결과를 받았습니다. 그런데 어떻게 추천을 하지 라는 호기심이 생깁니다.** 결론적으로 학습에 사용된 item의 장르에 기반해서 ColdStart 추천을 받은 것을 확인할 수 있습니다.
     
-## Personalize 구조 및 워크샵에서 만들어지는 것들 
+# 2. Personalize 구조 및 워크샵에서 만들어지는 것들 
 아래의 그림 처럼, Personalize의 구조 입니다. 이 구조를 노트북을 한개씩 실행해 가면서 레고블럭처럼 만들게 됩니다.
 
 ![Fig.2.1.dataset-group-structure](movielens_getting_started/static/imgs/Fig.2.1.dataset-group-structure.png)
 
-## 워크샵 실행에 따른 결과물
+# 3. 워크샵 실행에 따른 결과물
 - 유저당 영화 추천 리스트, 특정 영화와 비슷한 영화 리스트 추천
 - 실시간 영화 선택에 따른 추천 리스트의 변화 시뮬레이션
 - Batch Export (모든 영화 유저에 대해서 일과적으로 모든 추천 리스트 제공)
@@ -48,7 +50,7 @@
 
 
 
-## 노트북 설명
+# 4. 노트북 설명
 * 1.1.Prepare_Data_Files.ipynb
     - Movielens 데이타를 다운로드 받고, 전체 데이타의 분포를 확인 한 후에 데이터를 학습/검증, 콜드스타트 용으로 3가지의 데이타로 분리 합니다.
 - 1.2.Option-Train-Data-Distritbution.ipynb
@@ -90,10 +92,13 @@
     - 모든 리소스 제거 노트북
     
 
-
+# 5. AMAZON PERSONALIZE 기반으로 실시간 추천 사이트 만들기
+- 아래는 개발자 관점에서 실제 추천 웹사이트를 만들어 보는 워크샵 입니다. 이후에 진행을 해보시기를 바랍니다.
+- https://public-prod.d2j29wklm5wvtw.amplifyapp.com/ko/
+![personalize_app.png](img/personalize_app.png)
 
 ---
-## 참고:
+# A. 참고:
 - Amazon Personalize Developer Guide
     - 공식 개발 문서 가이드 입니다.
     - https://docs.aws.amazon.com/personalize/latest/dg/what-is-personalize.html
@@ -102,6 +107,7 @@
 - Amazon Personalize Samples
     - 공식 에제 Git 저장소 입니다.
     - https://github.com/aws-samples/amazon-personalize-samples
+
 
 
 
