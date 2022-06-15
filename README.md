@@ -25,13 +25,6 @@
     - **실제로 캠페인을 통한 추천의 성능이 얼마나 잘 되었는지를 확인 합니다.**
     - 또한 이 결과를 이전에 솔류션 버전에서 생성된 성능 지표와 비교 합니다.
 
-
-- ColdStart Campaign 성능 분석
-    - **"ColdStart 의 성능이 정말 잘 나올까?"** 라는 호기심이 생깁니다. 1853개의 ColdStart의 아이템에서 랜덤으로 선택한 리스트와 ColdStart Campaign의 결과를 비교 합니다.
-
-
-- ColdStart Campaign 의 추천 결과 유추
-    - **추천 결과를 받았습니다. 그런데 어떻게 추천을 하지 라는 호기심이 생깁니다.** 결론적으로 학습에 사용된 item의 장르에 기반해서 ColdStart 추천을 받은 것을 확인할 수 있습니다.
     
 # 2. Personalize 구조 및 워크샵에서 만들어지는 것들 
 아래의 그림 처럼, Personalize의 구조 입니다. 이 구조를 노트북을 한개씩 실행해 가면서 레고블럭처럼 만들게 됩니다.
@@ -45,8 +38,6 @@
 - **특정 유저의 추런 결과 분석**
     - 과거 최근 영화 리스트 (학습 데이터)에 기반한 추천 리스트의 비교를 통해서 직관적으로 어떻게 추천을 했는지 확인 및 얼마나 정확하게 추천 했는지를 확인 함
 - 만들어진 캠패인을 통해서 추천 받은 리스트가 얼마나 정확한지 확인. <br>**추천 리스트와 검증 셋을 비교하여 성능 지표 산출 (전체 6040명)**
-- Coldstart(신상품)의 성능을 랜덤으로 추천시와 비교하여 성능 확인
-- **특정 유저에게 Coldstart로 추천 받은 리스트에 대해서, 왜 이런 리스트를 추천했는지를 유추**
 
 
 
@@ -60,9 +51,6 @@
 - 3.1.Create_Solutions_Versons.ipynb
     - Personalize가 제공하는 7가지의 솔류션 버전을 생성 합니다.
         - **User-Personalization (최신 2020.8에 출시된 레서피)**
-        - HRNN
-        - HRNN Coldstart
-        - HRNN-Metadata
         - popularity-count 
         - SIMS
         - Personalized Ranking
@@ -71,9 +59,6 @@
 - 4.1.Create_Campaigns.ipynb    
     - 7가지의 솔류션 버전 중에서 아래 5개만 캠페인 생성 (계정당 기본 캠페인의 Limit이 5 이기에 5개만 생성 함)
         - user-personalization
-        - HRNN
-        - HRNN-Meta
-        - HRNN-Coldstart
         - SIMS
 - 4.2.getRec_Campaigns.ipynb        
     - user-personalization 로 만든 캠페인을 이용하여 특정 유저의 추천 리스트 생성 및 SIMS로 만든 캠페인을 통한 특정 아이템에 대한 유사한 추천 아이템 리스트를 생성
@@ -86,8 +71,6 @@
 - 6.1.Evaluate_Analyse.ipynb
     - 특정 유저 추천 분석
     - 캠페인을 통한 전체 유저(6040명)의 추천 리스트와 검증 셋과 비교를 통한 성능 지표 확인
-    - 콜드 스타트와 랜덤으로 추천을 비교하여 성능 확인 
-    - 콜드 스타트의 추천 리스트 유추 분석
 - 9.1.Cleanup.ipynb
     - 모든 리소스 제거 노트북
     
