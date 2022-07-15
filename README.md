@@ -77,7 +77,7 @@
 
 # 5. AMAZON PERSONALIZE 기반으로 실시간 추천 사이트 만들기
 - 아래는 개발자 관점에서 실제 추천 웹사이트를 만들어 보는 워크샵 입니다. 이후에 진행을 해보시기를 바랍니다.
-- https://public-prod.d2j29wklm5wvtw.amplifyapp.com/ko/
+- https://catalog.us-east-1.prod.workshops.aws/workshops/ed82a5d4-6630-41f0-a6a1-9345898fa6ec/ko-KR
 ![personalize_app.png](img/personalize_app.png)
 
 ---
@@ -92,6 +92,9 @@
     - https://github.com/aws-samples/amazon-personalize-samples
 
 
+- Retail Demo Store
+    - 내용이 방대하지만, 현존하는 최고의 데모 및 코드를 보여 줌. 
+    - https://github.com/aws-samples/retail-demo-store
 
 
 - Recent Blog: Amazon Personalize can now create up to 50% better recommendations for fast changing catalogs of new products and fresh content    
