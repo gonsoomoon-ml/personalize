@@ -27,7 +27,7 @@
 
     
 # 2. Personalize 구조 및 워크샵에서 만들어지는 것들 
-아래의 그림 처럼, Personalize의 구조 입니다. 이 구조를 노트북을 한개씩 실행해 가면서 레고블럭처럼 만들게 됩니다.
+아래의 그림 처럼, Personalize의 구조 입니다. 이 구조의 일부를 노트북 한개씩 실행해 가면서 레고블럭처럼 만들게 됩니다.
 
 ![Fig.2.1.dataset-group-structure](movielens_getting_started/static/imgs/Fig.2.1.dataset-group-structure.png)
 
